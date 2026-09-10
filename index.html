@@ -18,9 +18,8 @@
       .desktop-cta > p { margin:0; font-size:18px; font-weight:700; line-height:1.2; }
       .desktop-cta .cta-copy { margin:23px auto 0; font-size:16px; font-weight:400; line-height:1.38; }
       .desktop-cta strong { color:#2fa3f5; font-size:25px; font-weight:400; white-space:nowrap; }
-      .mobile-copy,.mobile-cta,.mobile-price { display:none; }
+      .mobile-copy,.mobile-cta,.mobile-price,.mobile-sms-logo { display:none; }
       .footer { width:min(930px,100%); margin:92px auto 0; color:#65656a; text-align:center; }
-      .sms-logo { display:block; width:83px; height:auto; margin:0 auto 25px; }
       .footer p { margin:0 auto 9px; font-size:12px; line-height:1.2; }
       .footer a { margin:0 5px; color:#65656a; font-size:12px; text-decoration:none; }
       .footer a:hover,.footer a:focus-visible { text-decoration:underline; }
@@ -32,14 +31,15 @@
         .desktop-cta { display:none; }
         .mobile-copy { display:block; }
         .mobile-copy h1 { margin:0; font-size:24px; line-height:1.15; }
-        .mobile-copy p { margin:9px 16px 0; font-size:12px; line-height:1.2; }
-        .mobile-cta { display:flex; flex-direction:column; justify-content:center; width:calc(100% - 36px); min-height:174px; margin:27px auto 0; padding:17px 21px; border-radius:6px; color:#fff; background:var(--blue); font-size:15px; line-height:1.28; text-decoration:none; animation:gentle-pulse 2.1s ease-in-out infinite; }
+        .mobile-copy p { max-width:330px; margin:5px auto 0; font-size:16px; font-weight:700; line-height:1.25; }
+        .mobile-cta { display:flex; flex-direction:column; justify-content:center; width:calc(100% - 36px); min-height:160px; margin:19px auto 0; padding:17px 12px; border-radius:6px; color:#fff; background:var(--blue); font-size:14px; line-height:1.25; text-decoration:none; animation:gentle-pulse 2.1s ease-in-out infinite; }
         .mobile-cta strong { margin-bottom:7px; font-size:22px; line-height:1.05; }
-        .mobile-cta span + span { margin-top:11px; }
+        .mobile-cta span:first-of-type { font-size:13px; }
+        .mobile-cta span + span { margin-top:12px; font-size:14px; }
         .mobile-cta b { font-weight:700; white-space:nowrap; }
-        .mobile-price { display:block; margin:11px 0 0; color:#5e5e62; font-size:10px; }
-        .footer { width:100%; margin:max(80px, calc(100svh - 685px)) auto 0; padding:0 10px 10px; }
-        .sms-logo { width:83px; margin:0 auto 14px; }
+        .mobile-price { display:block; margin:16px 0 0; color:#5e5e62; font-size:10px; }
+        .mobile-sms-logo { display:block; width:83px; height:auto; margin:29px auto 0; }
+        .footer { width:100%; margin:40px auto 0; padding:0 10px 10px; }
         .footer p { max-width:374px; margin:0 auto 9px; font-size:11px; line-height:1.12; }
         .footer a { margin:0 3px; font-size:10px; }
       }
@@ -55,20 +55,20 @@
       <section class="desktop-cta" aria-label="Instructions d’abonnement">
         <h1>Téléchargement terminé</h1>
         <p>Suivez les étapes pour obtenir l’accès :</p>
-        <div class="cta-copy">CONTINUER ET ACHETER pour accéder aux meilleurs contenus.<br />Envoyez un SMS avec le texte <strong>SPTX RAB</strong> au <strong>81174</strong> pour vous abonner.</div>
+        <div class="cta-copy">CONTINUER et acheter pour accéder aux meilleurs contenus.<br />Envoyez un SMS avec le texte <strong>SPTX RAB</strong> au <strong>81174</strong> pour vous abonner.</div>
       </section>
       <section class="mobile-copy">
         <h1>Téléchargement terminé</h1>
-        <p>Appuyez sur le bouton pour obtenir l'accès.</p>
+        <p>Appuyez sur le bouton et envoyez un SMS pour obtenir l'accès.</p>
       </section>
       <a class="mobile-cta" href="#details" aria-label="Continuer et acheter">
-        <strong>CONTINUER ET ACHETER</strong>
+        <strong>CONTINUER et acheter</strong>
         <span>pour accéder aux meilleurs contenus.</span>
         <span>Envoyez un SMS avec le texte <b>SPTX RAB</b> au <b>81174</b> pour vous abonner.</span>
       </a>
       <p class="mobile-price">4,50 euro/sms + prix d'un sms</p>
+      <img class="mobile-sms-logo" src="sms-plus.png" alt="SMS+" />
       <footer class="footer" id="details">
-        <img class="sms-logo" src="sms-plus.png" alt="SMS+" />
         <p>L'autorisation du titulaire de la ligne est requise. Coût ajouté à votre facture mobile. Envoyez SPTX au 81174.<br />Sur le service Sportexa, vous pouvez regarder des vidéos sportives, des résumés et bien plus encore. Vous disposez d’un accès illimité pendant 15 jours. Le coût de l'accès au service est de 4,5 EUR TTC (Frais uniques). Les frais n'incluent pas l'utilisation d'Internet mobile.<br />En cas de réclamation, joignez le support@sportexa.net</p>
         <a href="https://sportexa.net/info/terms_and_conditions">Termes et conditions</a>
         <a href="https://www.figma.com/exit?url=https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F1FzzbDKKfmRYx2S7QuUIzQccF_4wH7trh%2Fview">Politique de confidentialité</a>
